@@ -1,0 +1,33 @@
+/* Full-screen hero */
+.hero {
+    height: 100vh;
+    /* note the leading slash: MkDocs will serve assets under /assets/... */
+    background: url('../images/hero.jpg') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-size: 4rem;
+    text-shadow: 0 2px 8px rgba(0,0,0,0.6);
+    margin: 0;    /* ensure no default margin */
+  }
+  
+  /* Scroll-reveal sections */
+  .content-section {
+    opacity: 0;
+    transform: translateY(40px);
+    transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+  }
+  
+  .content-section.visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+
+  .md-header, .md-header-nav {
+    background-color: #000 !important;
+  }
+  
+
+
